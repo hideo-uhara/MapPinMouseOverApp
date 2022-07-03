@@ -184,7 +184,7 @@ extension MapViewController: MKMapViewDelegate {
 				popoverViewController.image = image
 			}
 			
-			self.present(popoverViewController, asPopoverRelativeTo: view.bounds, of: view, preferredEdge: .minY, behavior: .transient)
+			self.present(popoverViewController, asPopoverRelativeTo: view.bounds, of: view, preferredEdge: .minY, behavior: .applicationDefined)
 			photoAnnotation.popoverViewController = popoverViewController
 			
 			return
