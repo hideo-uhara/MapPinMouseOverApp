@@ -18,6 +18,23 @@ class PhotoAnnotation: MKPointAnnotation {
 	}
 }
 
+class MapView: MKMapView {
+	
+	override func hitTest(_ point: NSPoint) -> NSView? {
+		var hitView: NSView? = super.hitTest(point)
+		
+		while hitView != nil {
+			if hitView is MKAnnotationView {
+				return nil
+			}
+			
+			hitView = hitView?.superview
+		}
+		
+		return super.hitTest(point)
+	}
+}
+
 class MapViewController: NSViewController {
 	
 	let imagePaths: [String] = [
