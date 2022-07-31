@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C1F4316289611EE002972E7 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1F4315289611EE002972E7 /* AppKit.framework */; };
+		7C1F4318289611F5002972E7 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1F4317289611F5002972E7 /* Photos.framework */; };
 		7CB0D4D5282640A10023071A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB0D4D4282640A10023071A /* AppDelegate.swift */; };
 		7CB0D4D7282640A10023071A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB0D4D6282640A10023071A /* MapViewController.swift */; };
 		7CB0D4D9282640A30023071A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB0D4D8282640A30023071A /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C1F4315289611EE002972E7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		7C1F4317289611F5002972E7 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		7CB0D4D1282640A10023071A /* MapPinMouseOverApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapPinMouseOverApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB0D4D4282640A10023071A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CB0D4D6282640A10023071A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C1F4316289611EE002972E7 /* AppKit.framework in Frameworks */,
+				7C1F4318289611F5002972E7 /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C1F4314289611EE002972E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C1F4317289611F5002972E7 /* Photos.framework */,
+				7C1F4315289611EE002972E7 /* AppKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7CB0D4C8282640A10023071A = {
 			isa = PBXGroup;
 			children = (
 				7CB0D4D3282640A10023071A /* MapPinMouseOverApp */,
 				7CB0D4D2282640A10023071A /* Products */,
+				7C1F4314289611EE002972E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
