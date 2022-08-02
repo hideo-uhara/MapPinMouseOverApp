@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C1F4318289611F5002972E7 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1F4317289611F5002972E7 /* Photos.framework */; };
 		7C1F4337289615A7002972E7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1F4336289615A7002972E7 /* Cocoa.framework */; };
 		7CB0D4D5282640A10023071A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB0D4D4282640A10023071A /* AppDelegate.swift */; };
 		7CB0D4D7282640A10023071A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB0D4D6282640A10023071A /* MapViewController.swift */; };
@@ -15,10 +14,10 @@
 		7CB0D4DC282640A30023071A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB0D4DA282640A30023071A /* Main.storyboard */; };
 		7CD32EAF282A4204001E28CB /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD32EAE282A4204001E28CB /* PopoverViewController.swift */; };
 		7CD32EB8282A8D05001E28CB /* images in Resources */ = {isa = PBXBuildFile; fileRef = 7CD32EB7282A8D05001E28CB /* images */; };
+		7CE2EC262898F1FD001F0CDB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE2EC252898F1FD001F0CDB /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7C1F4317289611F5002972E7 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		7C1F4336289615A7002972E7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		7CB0D4D1282640A10023071A /* MapPinMouseOverApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapPinMouseOverApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB0D4D4282640A10023071A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +27,7 @@
 		7CB0D4DD282640A30023071A /* MapPinMouseOverApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MapPinMouseOverApp.entitlements; sourceTree = "<group>"; };
 		7CD32EAE282A4204001E28CB /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		7CD32EB7282A8D05001E28CB /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		7CE2EC252898F1FD001F0CDB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,8 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE2EC262898F1FD001F0CDB /* MapKit.framework in Frameworks */,
 				7C1F4337289615A7002972E7 /* Cocoa.framework in Frameworks */,
-				7C1F4318289611F5002972E7 /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,8 +46,8 @@
 		7C1F4314289611EE002972E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7CE2EC252898F1FD001F0CDB /* MapKit.framework */,
 				7C1F4336289615A7002972E7 /* Cocoa.framework */,
-				7C1F4317289611F5002972E7 /* Photos.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
