@@ -144,12 +144,13 @@ extension MapViewController: MKMapViewDelegate {
 			self.mapView.selectAnnotation(annotation, animated: true)
 		} else {
 			// マウスオーバーのAnnotationViewがない場合はAnnotationの選択を解除
-			self.deselectAnnotationTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false, block: { (timer) in
-				
-				for annotation: MKAnnotation in self.mapView.selectedAnnotations {
-					self.mapView.deselectAnnotation(annotation, animated: true)
-				}
-			 })
+			self.deselectAnnotationTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timerEvent), userInfo: nil, repeats: false)
+		}
+	}
+	
+	@objc func timerEvent() {
+		for annotation: MKAnnotation in self.mapView.selectedAnnotations {
+			self.mapView.deselectAnnotation(annotation, animated: true)
 		}
 	}
 	
