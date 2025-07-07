@@ -5,9 +5,8 @@
 import Cocoa
 import MapKit
 
-
 class PhotoAnnotation: MKPointAnnotation {
-	var path: String
+	let path: String
 	var popoverViewController: PopoverViewController! = nil
 	
 	init(path: String, latitude: Double, longitude: Double) {
